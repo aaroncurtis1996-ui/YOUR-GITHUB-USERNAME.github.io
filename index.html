@@ -10,25 +10,27 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    :root { --brand:#236b3f; --dark:#0f172a; }
+    :root { --brand:#236b3f; }
     html { scroll-behavior: smooth; }
-    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
-    .container{ max-width:1100px; }
+    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial; }
+    .container { max-width:1100px; }
   </style>
 </head>
+
 <body class="bg-white text-slate-900">
+
   <!-- Header -->
   <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-100">
     <div class="container mx-auto px-4 py-3 flex items-center justify-between">
       <a href="#home" class="flex items-center gap-3">
-        <img src="letterhead logo 1.png" alt="Portneuf Logistics logo" class="h-9 w-auto" />
+        <img src="images/letterhead-logo-1.png" alt="Portneuf Logistics logo" class="h-9 w-auto" />
       </a>
       <nav class="hidden md:flex items-center gap-6 text-[15px]">
         <a class="hover:text-[var(--brand)]" href="#services">Services</a>
         <a class="hover:text-[var(--brand)]" href="#coverage">Coverage</a>
         <a class="hover:text-[var(--brand)]" href="#about">About</a>
         <a class="hover:text-[var(--brand)]" href="#contact">Contact</a>
-        <a href="tel:2082695442" class="inline-flex items-center rounded-lg bg-[var(--brand)] px-4 py-2 font-semibold text-white shadow-sm hover:opacity-90">Call 208‑269‑5442</a>
+        <a href="tel:2082695442" class="inline-flex items-center rounded-lg bg-[var(--brand)] px-4 py-2 font-semibold text-white shadow-sm hover:opacity-90">Call 208-269-5442</a>
       </nav>
       <button class="md:hidden inline-flex items-center justify-center rounded-lg border px-3 py-2" onclick="document.getElementById('mnav').classList.toggle('hidden')">Menu</button>
     </div>
@@ -38,17 +40,19 @@
         <a href="#coverage">Coverage</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
-        <a href="tel:2082695442" class="inline-flex items-center rounded-lg bg-[var(--brand)] px-4 py-2 font-semibold text-white shadow-sm">Call 208‑269‑5442</a>
+        <a href="tel:2082695442" class="inline-flex items-center rounded-lg bg-[var(--brand)] px-4 py-2 font-semibold text-white shadow-sm">Call 208-269-5442</a>
       </div>
     </div>
   </header>
 
   <!-- Hero -->
   <section id="home" class="relative overflow-hidden">
-    <img src="IMG_5098.jpg" alt="Idaho landscape" class="absolute inset-0 h-full w-full object-cover opacity-40" loading="lazy" />
+    <img src="images/idaho-landscape.jpg" alt="Idaho landscape" class="absolute inset-0 h-full w-full object-cover opacity-40" loading="lazy" />
     <div class="relative container mx-auto px-4 py-20 text-center text-slate-900">
       <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">Portneuf Logistics LLC</h1>
-      <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto">USDOT 4491926 · Reliable Idaho-based freight carrier focusing on the I-15, I-84, and I-86 corridors — from Boise to Pocatello to Idaho Falls and beyond within Idaho.</p>
+      <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto">
+        USDOT 4491926 · Reliable Idaho-based freight carrier focusing on the I-15, I-84, and I-86 corridors — from Boise to Pocatello to Idaho Falls and anywhere within Idaho.
+      </p>
       <div class="mt-6 flex flex-wrap justify-center gap-3 text-sm">
         <span class="rounded-full bg-white/90 px-3 py-1 border border-slate-200">FMCSA Registered</span>
         <span class="rounded-full bg-white/90 px-3 py-1 border border-slate-200">Insured & Compliant</span>
@@ -61,11 +65,13 @@
   <section id="services" class="border-t border-slate-100 bg-slate-50">
     <div class="container mx-auto px-4 py-14 text-center">
       <h2 class="text-3xl font-extrabold">Freight Services</h2>
-      <p class="mt-3 max-w-2xl mx-auto text-slate-700">We provide dependable transport for palletized freight, light industrial materials, and commercial goods across Idaho. Fast, secure, and always communicated clearly from pickup to delivery.</p>
+      <p class="mt-3 max-w-2xl mx-auto text-slate-700">
+        Dependable transport for palletized freight, light industrial materials, and commercial goods across Idaho — fast, secure, and with clear communication.
+      </p>
       <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
         <div class="rounded-2xl border bg-white p-6">
           <h3 class="font-bold text-lg">LTL & Full Load Freight</h3>
-          <p class="mt-2 text-sm text-slate-700">Timely deliveries of palletized and boxed goods across Idaho’s main interstates.</p>
+          <p class="mt-2 text-sm text-slate-700">Timely deliveries of palletized and boxed goods across Idaho’s interstates.</p>
         </div>
         <div class="rounded-2xl border bg-white p-6">
           <h3 class="font-bold text-lg">Retail & Distribution</h3>
@@ -83,7 +89,9 @@
   <section id="coverage" class="border-t border-slate-100">
     <div class="container mx-auto px-4 py-14 text-center">
       <h2 class="text-3xl font-extrabold">Coverage Area</h2>
-      <p class="mt-3 max-w-2xl mx-auto text-slate-700">Currently serving all of Idaho — with primary focus on the I-15, I-84, and I-86 corridors between Boise, Pocatello, and Idaho Falls. Expansion beyond Idaho will follow upon activation of our MC number.</p>
+      <p class="mt-3 max-w-2xl mx-auto text-slate-700">
+        Currently serving all of Idaho — with a primary focus on the I-15, I-84, and I-86 corridors between Boise, Pocatello, and Idaho Falls. Expansion beyond Idaho will follow once our MC number is active.
+      </p>
     </div>
   </section>
 
@@ -92,10 +100,14 @@
     <div class="container mx-auto px-4 py-14 grid lg:grid-cols-2 gap-10 items-center">
       <div>
         <h2 class="text-3xl font-extrabold">About Portneuf Logistics</h2>
-        <p class="mt-4 text-slate-700">Portneuf Logistics LLC is a Pocatello-based freight carrier established to serve the growing logistics demand within Idaho. Our mission is to provide reliable, safe, and professional freight transportation with clear communication every step of the way.</p>
-        <p class="mt-4 text-slate-700">We specialize in small to mid-scale freight that fits within non-CDL box trucks, serving both commercial and light industrial clients. As our business grows, we plan to expand authority to neighboring states once our MC number is active.</p>
+        <p class="mt-4 text-slate-700">
+          Portneuf Logistics LLC is a Pocatello-based freight carrier established to meet Idaho’s logistics demand. We provide safe, reliable, and professional freight service with clear communication every step of the way.
+        </p>
+        <p class="mt-4 text-slate-700">
+          We specialize in small-to-mid-scale freight that fits non-CDL box trucks, serving commercial and light-industrial clients. As we grow, we’ll expand authority to neighboring states after our MC activation.
+        </p>
       </div>
-      <img src="letterhead logo 1.png" alt="Portneuf Logistics" class="mx-auto h-32 w-auto" loading="lazy" />
+      <img src="images/letterhead-logo-1.png" alt="Portneuf Logistics logo" class="mx-auto h-32 w-auto" loading="lazy" />
     </div>
   </section>
 
@@ -110,7 +122,7 @@
         <p class="mt-2 text-slate-700">Pocatello, Idaho · USDOT 4491926</p>
       </div>
 
-      <!-- Quote Form (mailto; no backend required) -->
+      <!-- Quote Form -->
       <div class="mt-10 grid lg:grid-cols-2 gap-8">
         <div class="rounded-2xl border bg-white p-6">
           <h3 class="font-bold text-xl">Request a Freight Quote</h3>
@@ -134,7 +146,6 @@
             </div>
             <label class="grid gap-1 text-sm">Load Description<textarea class="mt-1 rounded-lg border px-3 py-2" name="Load Description" rows="4" placeholder="Dimensions, accessorials (liftgate, residential, inside), appointment windows, special notes"></textarea></label>
             <button class="mt-2 inline-flex items-center justify-center rounded-lg bg-[var(--brand)] px-5 py-3 font-semibold text-white">Send Quote via Email</button>
-            <p class="text-xs text-slate-500">Your email client will open with these details prefilled.</p>
           </form>
         </div>
 
@@ -151,7 +162,6 @@ Delivery deadline/window:
 Accessorials (liftgate / inside / residential / appointment):
 Special notes (hazmat? no / high value / fragile):
 Billing contact & terms:</pre>
-          <p class="mt-3 text-sm text-slate-600">Prefer a web form? Swap the form's <code>action</code> to a Formspree endpoint later (e.g., <code>https://formspree.io/f/xxxx</code>) for direct submissions without opening an email app.</p>
         </div>
       </div>
 
@@ -162,10 +172,13 @@ Billing contact & terms:</pre>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer class="border-t border-slate-100 bg-slate-50 text-center text-sm text-slate-600 py-6">
-    <p>© <span id="yr"></span> Portneuf Logistics LLC · Pocatello, ID · USDOT 4491926 · <a href="tel:2082695442">208‑269‑5442</a></p>
+    <p>© <span id="yr"></span> Portneuf Logistics LLC · Pocatello, ID · USDOT 4491926 · <a href="tel:2082695442">208-269-5442</a></p>
   </footer>
 
-  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
