@@ -101,13 +101,61 @@
 
   <!-- Contact -->
   <section id="contact" class="border-t border-slate-100">
-    <div class="container mx-auto px-4 py-14 text-center">
-      <h2 class="text-3xl font-extrabold">Contact</h2>
-      <p class="mt-3 text-slate-700">For quotes, inquiries, or scheduling, reach out by phone or email:</p>
-      <p class="mt-2 text-lg font-semibold text-[var(--brand)]">📞 <a href="tel:2082695442" class="hover:underline">208‑269‑5442</a></p>
-      <p class="mt-2 text-lg font-semibold text-[var(--brand)]">✉️ <a href="mailto:contact@portneuflogistics.com" class="hover:underline">contact@portneuflogistics.com</a></p>
-      <p class="mt-2 text-slate-700">Pocatello, Idaho · USDOT 4491926</p>
-      <div class="mt-8 flex justify-center gap-4">
+    <div class="container mx-auto px-4 py-14">
+      <div class="text-center">
+        <h2 class="text-3xl font-extrabold">Contact</h2>
+        <p class="mt-3 text-slate-700">For quotes, inquiries, or scheduling, reach out by phone or email, or use the form below.</p>
+        <p class="mt-2 text-lg font-semibold text-[var(--brand)]">📞 <a href="tel:2082695442" class="hover:underline">208-269-5442</a></p>
+        <p class="mt-2 text-lg font-semibold text-[var(--brand)]">✉️ <a href="mailto:contact@portneuflogistics.com" class="hover:underline">contact@portneuflogistics.com</a></p>
+        <p class="mt-2 text-slate-700">Pocatello, Idaho · USDOT 4491926</p>
+      </div>
+
+      <!-- Quote Form (mailto; no backend required) -->
+      <div class="mt-10 grid lg:grid-cols-2 gap-8">
+        <div class="rounded-2xl border bg-white p-6">
+          <h3 class="font-bold text-xl">Request a Freight Quote</h3>
+          <p class="mt-2 text-sm text-slate-600">Include pickup/delivery cities, pallets, weight, and dates. This form opens your email app and sends to <strong>contact@portneuflogistics.com</strong>.</p>
+          <form class="mt-5 grid gap-4" action="mailto:contact@portneuflogistics.com" method="post" enctype="text/plain">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <label class="grid gap-1 text-sm">Company<input class="mt-1 rounded-lg border px-3 py-2" name="Company" required></label>
+              <label class="grid gap-1 text-sm">Email<input class="mt-1 rounded-lg border px-3 py-2" type="email" name="Email" required></label>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <label class="grid gap-1 text-sm">Pickup City, ST<input class="mt-1 rounded-lg border px-3 py-2" name="Pickup City, ST" required></label>
+              <label class="grid gap-1 text-sm">Delivery City, ST<input class="mt-1 rounded-lg border px-3 py-2" name="Delivery City, ST" required></label>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <label class="grid gap-1 text-sm">Pallets<input class="mt-1 rounded-lg border px-3 py-2" type="number" name="Pallets" min="1"></label>
+              <label class="grid gap-1 text-sm">Weight (lbs)<input class="mt-1 rounded-lg border px-3 py-2" type="number" name="Weight (lbs)"></label>
+            </div>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <label class="grid gap-1 text-sm">Pickup Date<input class="mt-1 rounded-lg border px-3 py-2" type="date" name="Pickup Date"></label>
+              <label class="grid gap-1 text-sm">Delivery Date<input class="mt-1 rounded-lg border px-3 py-2" type="date" name="Delivery Date"></label>
+            </div>
+            <label class="grid gap-1 text-sm">Load Description<textarea class="mt-1 rounded-lg border px-3 py-2" name="Load Description" rows="4" placeholder="Dimensions, accessorials (liftgate, residential, inside), appointment windows, special notes"></textarea></label>
+            <button class="mt-2 inline-flex items-center justify-center rounded-lg bg-[var(--brand)] px-5 py-3 font-semibold text-white">Send Quote via Email</button>
+            <p class="text-xs text-slate-500">Your email client will open with these details prefilled.</p>
+          </form>
+        </div>
+
+        <div class="rounded-2xl border bg-white p-6">
+          <h3 class="font-bold text-xl">Quote Email Template</h3>
+          <pre class="mt-3 text-xs bg-slate-100 p-3 rounded-lg overflow-x-auto">Subject: Freight Quote – [Pickup City, ST] → [Delivery City, ST] – [Date]
+Company:
+Contact name & phone:
+Load description (pallets / weight / dims):
+Pickup address & hours:
+Delivery address & hours:
+Pickup date/time:
+Delivery deadline/window:
+Accessorials (liftgate / inside / residential / appointment):
+Special notes (hazmat? no / high value / fragile):
+Billing contact & terms:</pre>
+          <p class="mt-3 text-sm text-slate-600">Prefer a web form? Swap the form's <code>action</code> to a Formspree endpoint later (e.g., <code>https://formspree.io/f/xxxx</code>) for direct submissions without opening an email app.</p>
+        </div>
+      </div>
+
+      <div class="mt-10 flex justify-center gap-4">
         <a href="mailto:contact@portneuflogistics.com" class="inline-flex items-center rounded-lg bg-[var(--brand)] px-6 py-3 font-semibold text-white hover:opacity-90">Email Portneuf Logistics</a>
         <a href="tel:2082695442" class="inline-flex items-center rounded-lg border border-[var(--brand)] px-6 py-3 font-semibold text-[var(--brand)] hover:bg-[var(--brand)] hover:text-white">Call Now</a>
       </div>
