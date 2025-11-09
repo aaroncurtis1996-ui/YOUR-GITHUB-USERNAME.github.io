@@ -17,17 +17,23 @@
   </style>
 </head>
 
-<body class="bg-white text-slate-900">
-  <!-- Logo -->
-  <img src="logo-portneuf.png" alt="Portneuf Logistics logo" class="h-20 w-auto mx-auto mt-6" />
+<body class="bg-white text-slate-900 relative">
 
-  <!-- Hero background -->
-  <img src="background-mountains.jpg" alt="" class="fixed inset-0 h-full w-full object-cover opacity-40 -z-10" loading="lazy" />
+  <!-- Fixed Background Image (stays still while scrolling) -->
+  <img src="background-mountains.jpg" alt="" 
+       class="fixed top-0 left-0 w-full h-full object-cover opacity-40 -z-10" 
+       loading="lazy" />
 
-  <!-- Hero -->
-  <section id="home" class="relative overflow-hidden">
-    <img src="images/idaho-landscape.jpg" alt="Idaho landscape" class="absolute inset-0 h-full w-full object-cover opacity-40" loading="lazy" />
-    <div class="relative container mx-auto px-4 py-20 text-center text-slate-900">
+  <!-- Centered Logo (4× larger) -->
+  <div class="w-full flex justify-center pt-12">
+    <img src="logo-portneuf.png" 
+         alt="Portneuf Logistics logo" 
+         class="h-40 w-auto drop-shadow-lg" />
+  </div>
+
+  <!-- Hero Section -->
+  <section id="home" class="relative overflow-hidden text-center mt-8">
+    <div class="container mx-auto px-4 py-20 text-slate-900">
       <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">Portneuf Logistics LLC</h1>
       <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto">
         USDOT 4491926 · Reliable Idaho-based freight carrier focusing on the I-15, I-84, and I-86 corridors — from Boise to Pocatello to Idaho Falls and anywhere within Idaho.
