@@ -26,20 +26,25 @@
 
 <body class="bg-white text-slate-900">
 
-  <!-- 🔹 Hero Section with Fixed Background and Logo (Adjusted Size and Spacing) -->
-  <section class="bg-fixed-img relative h-[90vh] flex flex-col items-center justify-center text-center text-white">
-    <div class="absolute inset-0 bg-black/45"></div>
-    <div class="relative z-10 px-6">
-      <!-- Slightly smaller logo to reveal more background -->
-      <img src="./logo-clean.png" alt="Portneuf Logistics Logo" class="mx-auto mb-6 w-[650px] md:w-[750px] drop-shadow-lg">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4 mt-6">Reliable Logistics Solutions</h1>
-      <p class="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
-        Providing dependable, professional, and transparent transportation solutions across Idaho. 
-        Based in Pocatello, Portneuf Logistics LLC specializes in box truck freight, local deliveries, 
-        and logistics coordination for businesses and individuals who value reliability.
-      </p>
-    </div>
-  </section>
+<!-- Hero Section with Fixed Background and Logo (no clipping) -->
+<section class="bg-fixed-img relative min-h-screen flex items-center">
+  <div class="absolute inset-0 bg-black/40"></div>
+
+  <div class="relative z-10 w-full text-center text-white px-6 py-16 flex flex-col items-center gap-6">
+    <!-- Keep using your transparent logo -->
+    <img src="./letterhead logo 1.png"
+         alt="Portneuf Logistics Logo"
+         class="mx-auto w-[900px] md:w-[1000px] max-w-[92vw] h-auto drop-shadow-lg" />
+
+    <h1 class="text-4xl md:text-5xl font-bold">Reliable Logistics Solutions</h1>
+
+    <p class="text-lg md:text-xl max-w-3xl leading-relaxed">
+      Providing dependable, professional, and transparent transportation solutions across Idaho.
+      Based in Pocatello, Portneuf Logistics LLC specializes in box truck freight, local deliveries,
+      and logistics coordination for businesses and individuals who value reliability.
+    </p>
+  </div>
+</section>
 
   <!-- 🔹 Services Section -->
   <section id="services" class="py-20 bg-white">
