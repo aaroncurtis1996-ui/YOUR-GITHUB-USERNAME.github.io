@@ -3,172 +3,111 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
- <title>Portneuf Logistics LLC – Reliable Logistics Solutions in Idaho</title>
-<meta name="description" content="Portneuf Logistics LLC provides dependable and professional transportation solutions throughout Idaho. Based in Pocatello, we specialize in box truck freight, local deliveries, and logistics coordination for businesses and individuals who value reliability and transparency.">
+  <title>Portneuf Logistics LLC – Reliable Logistics Solutions in Idaho</title>
+  <meta name="description" content="Portneuf Logistics LLC provides dependable and professional transportation solutions throughout Idaho. Based in Pocatello, we specialize in box-truck freight, local deliveries, and logistics coordination for businesses and individuals who value reliability and transparency.">
+
+  <!-- Fonts and Tailwind -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+
   <style>
     :root { --brand:#236b3f; }
     html { scroll-behavior: smooth; }
-    body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial; }
+    body { font-family: 'Inter', system-ui, sans-serif; color:#0f172a; }
     .container { max-width:1100px; }
+    .bg-fixed-img {
+      background-image: url('background-mountains.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
   </style>
 </head>
 
 <body class="bg-white text-slate-900 relative">
 
- <!-- Hero Section with Fixed Background -->
-<div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white bg-black/40">
-  <h1 class="text-4xl md:text-5xl font-bold mb-4">Reliable Logistics Solutions</h1>
-  <p class="text-lg md:text-xl max-w-2xl mx-auto px-4">
-    Portneuf Logistics LLC provides dependable and professional transportation solutions throughout Idaho. 
-    Based in Pocatello, we specialize in box-truck freight, local deliveries, and logistics coordination 
-    for businesses and individuals who value reliability and transparency.
-  </p>
-</div>
-
-  <!-- Centered Logo (4× larger) -->
-  <div class="w-full flex justify-center pt-12">
-    <img src="logo-portneuf.png" 
-         alt="Portneuf Logistics logo" 
-         class="h-40 w-auto drop-shadow-lg" />
-  </div>
-
-  <!-- Hero Section -->
-  <section id="home" class="relative overflow-hidden text-center mt-8">
-    <div class="container mx-auto px-4 py-20 text-slate-900">
-      <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">Portneuf Logistics LLC</h1>
-      <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto">
-        USDOT 4491926 · Reliable Idaho-based freight carrier focusing on the I-15, I-84, and I-86 corridors — from Boise to Pocatello to Idaho Falls and anywhere within Idaho.
-      </p>
-      <div class="mt-6 flex flex-wrap justify-center gap-3 text-sm">
-        <span class="rounded-full bg-white/90 px-3 py-1 border border-slate-200">FMCSA Registered</span>
-        <span class="rounded-full bg-white/90 px-3 py-1 border border-slate-200">Insured & Compliant</span>
-        <span class="rounded-full bg-white/90 px-3 py-1 border border-slate-200">Locally Owned</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services -->
-  <section id="services" class="border-t border-slate-100 bg-slate-50">
-    <div class="container mx-auto px-4 py-14 text-center">
-      <h2 class="text-3xl font-extrabold">Freight Services</h2>
-      <p class="mt-3 max-w-2xl mx-auto text-slate-700">
-        Dependable transport for palletized freight, light industrial materials, and commercial goods across Idaho — fast, secure, and with clear communication.
-      </p>
-      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
-        <div class="rounded-2xl border bg-white p-6">
-          <h3 class="font-bold text-lg">LTL & Full Load Freight</h3>
-          <p class="mt-2 text-sm text-slate-700">Timely deliveries of palletized and boxed goods across Idaho’s interstates.</p>
-        </div>
-        <div class="rounded-2xl border bg-white p-6">
-          <h3 class="font-bold text-lg">Retail & Distribution</h3>
-          <p class="mt-2 text-sm text-slate-700">Dependable runs between distribution centers and retail locations with photo-verified PODs.</p>
-        </div>
-        <div class="rounded-2xl border bg-white p-6">
-          <h3 class="font-bold text-lg">Expedited Freight</h3>
-          <p class="mt-2 text-sm text-slate-700">When time matters, we provide direct, non-stop delivery anywhere in Idaho.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Coverage -->
-  <section id="coverage" class="border-t border-slate-100">
-    <div class="container mx-auto px-4 py-14 text-center">
-      <h2 class="text-3xl font-extrabold">Coverage Area</h2>
-      <p class="mt-3 max-w-2xl mx-auto text-slate-700">
-        Currently serving all of Idaho — with a primary focus on the I-15, I-84, and I-86 corridors between Boise, Pocatello, and Idaho Falls. Expansion beyond Idaho will follow once our MC number is active.
+  <!-- Hero Section with Fixed Background -->
+  <section class="bg-fixed-img relative h-screen flex flex-col items-center justify-center text-center text-white">
+    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="relative z-10 px-6">
+      <img src="logo.png" alt="Portneuf Logistics Logo" class="mx-auto mb-6 w-40 md:w-48">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Reliable Logistics Solutions</h1>
+      <p class="text-lg md:text-xl max-w-2xl mx-auto">
+        Portneuf Logistics LLC provides dependable and professional transportation solutions throughout Idaho. 
+        Based in Pocatello, we specialize in box-truck freight, local deliveries, and logistics coordination 
+        for businesses and individuals who value reliability and transparency.
       </p>
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about" class="border-t border-slate-100 bg-slate-50">
-    <div class="container mx-auto px-4 py-14 grid lg:grid-cols-2 gap-10 items-center">
-      <div>
-        <h2 class="text-3xl font-extrabold">About Portneuf Logistics</h2>
-        <p class="mt-4 text-slate-700">
-          Portneuf Logistics LLC is a Pocatello-based freight carrier established to meet Idaho’s logistics demand. We provide safe, reliable, and professional freight service with clear communication every step of the way.
-        </p>
-        <p class="mt-4 text-slate-700">
-          We specialize in small-to-mid-scale freight that fits non-CDL box trucks, serving commercial and light-industrial clients. As we grow, we’ll expand authority to neighboring states after our MC activation.
-        </p>
-      </div>
-      <img src="logo-portneuf.png" alt="Portneuf Logistics logo" class="mx-auto h-40 w-auto drop-shadow-lg" loading="lazy" />
+  <!-- Services Section -->
+  <section id="services" class="bg-white py-20">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-8 text-green-700">Our Services</h2>
+      <ul class="text-lg leading-relaxed max-w-2xl mx-auto space-y-3 text-left md:text-center">
+        <li><strong>Box Truck Freight:</strong> Up to full-load capacity within Idaho</li>
+        <li><strong>Local & Regional Deliveries:</strong> Across all of Idaho</li>
+        <li><strong>Route Coordination & Load Scheduling</strong></li>
+        <li><strong>Business-to-Business (B2B) & Commercial Deliveries</strong></li>
+        <li><strong>Route Planning & Consulting</strong></li>
+        <li><strong>On-Demand or Scheduled Delivery Plans</strong></li>
+        <li><strong>Proof of Delivery & Real-Time Updates</strong></li>
+        <li><strong>Partnership & Sub-Contract Opportunities</strong></li>
+      </ul>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="border-t border-slate-100">
-    <div class="container mx-auto px-4 py-14">
-      <div class="text-center">
-        <h2 class="text-3xl font-extrabold">Contact</h2>
-        <p class="mt-3 text-slate-700">For quotes, inquiries, or scheduling, reach out by phone or email, or use the form below.</p>
-        <p class="mt-2 text-lg font-semibold text-[var(--brand)]">📞 <a href="tel:2082695442" class="hover:underline">208-269-5442</a></p>
-        <p class="mt-2 text-lg font-semibold text-[var(--brand)]">✉️ <a href="mailto:contact@portneuflogistics.com" class="hover:underline">contact@portneuflogistics.com</a></p>
-        <p class="mt-2 text-slate-700">Pocatello, Idaho · USDOT 4491926</p>
-      </div>
+  <!-- Pricing Section -->
+  <section id="pricing" class="bg-gray-100 py-20">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-8 text-green-700">Transparent, Per-Mile Pricing</h2>
+      <p class="text-lg leading-relaxed max-w-2xl mx-auto">
+        Our pricing is simple, fair, and transparent — designed so clients always know what they’re paying for.
+        We calculate rates per mile based on distance, weight, and time requirements. Every quote includes fuel,
+        truck rental, and delivery time — so there are no hidden fees.
+      </p>
+    </div>
+  </section>
 
-      <!-- Quote Form -->
-      <div class="mt-10 grid lg:grid-cols-2 gap-8">
-        <div class="rounded-2xl border bg-white p-6">
-          <h3 class="font-bold text-xl">Request a Freight Quote</h3>
-          <p class="mt-2 text-sm text-slate-600">Include pickup/delivery cities, pallets, weight, and dates. This form opens your email app and sends to <strong>contact@portneuflogistics.com</strong>.</p>
-          <form class="mt-5 grid gap-4" action="mailto:contact@portneuflogistics.com" method="post" enctype="text/plain">
-            <div class="grid sm:grid-cols-2 gap-4">
-              <label class="grid gap-1 text-sm">Company<input class="mt-1 rounded-lg border px-3 py-2" name="Company" required></label>
-              <label class="grid gap-1 text-sm">Email<input class="mt-1 rounded-lg border px-3 py-2" type="email" name="Email" required></label>
-            </div>
-            <div class="grid sm:grid-cols-2 gap-4">
-              <label class="grid gap-1 text-sm">Pickup City, ST<input class="mt-1 rounded-lg border px-3 py-2" name="Pickup City, ST" required></label>
-              <label class="grid gap-1 text-sm">Delivery City, ST<input class="mt-1 rounded-lg border px-3 py-2" name="Delivery City, ST" required></label>
-            </div>
-            <div class="grid sm:grid-cols-2 gap-4">
-              <label class="grid gap-1 text-sm">Pallets<input class="mt-1 rounded-lg border px-3 py-2" type="number" name="Pallets" min="1"></label>
-              <label class="grid gap-1 text-sm">Weight (lbs)<input class="mt-1 rounded-lg border px-3 py-2" type="number" name="Weight (lbs)"></label>
-            </div>
-            <div class="grid sm:grid-cols-2 gap-4">
-              <label class="grid gap-1 text-sm">Pickup Date<input class="mt-1 rounded-lg border px-3 py-2" type="date" name="Pickup Date"></label>
-              <label class="grid gap-1 text-sm">Delivery Date<input class="mt-1 rounded-lg border px-3 py-2" type="date" name="Delivery Date"></label>
-            </div>
-            <label class="grid gap-1 text-sm">Load Description<textarea class="mt-1 rounded-lg border px-3 py-2" name="Load Description" rows="4" placeholder="Dimensions, accessorials (liftgate, residential, inside), appointment windows, special notes"></textarea></label>
-            <button class="mt-2 inline-flex items-center justify-center rounded-lg bg-[var(--brand)] px-5 py-3 font-semibold text-white">Send Quote via Email</button>
-          </form>
-        </div>
+  <!-- Why Choose Us -->
+  <section id="why" class="bg-white py-20">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-8 text-green-700">Why Choose Portneuf Logistics</h2>
+      <ul class="text-lg leading-relaxed max-w-2xl mx-auto space-y-3 text-left md:text-center">
+        <li>Fully Registered & Insured Idaho Business</li>
+        <li>Locally Owned and Operated in Pocatello / Chubbuck</li>
+        <li>Fast, Professional, and Cost-Effective</li>
+        <li>Reliable, Professional, and Punctual</li>
+      </ul>
+    </div>
+  </section>
 
-        <div class="rounded-2xl border bg-white p-6">
-          <h3 class="font-bold text-xl">Quote Email Template</h3>
-          <pre class="mt-3 text-xs bg-slate-100 p-3 rounded-lg overflow-x-auto">Subject: Freight Quote – [Pickup City, ST] → [Delivery City, ST] – [Date]
-Company:
-Contact name & phone:
-Load description (pallets / weight / dims):
-Pickup address & hours:
-Delivery address & hours:
-Pickup date/time:
-Delivery deadline/window:
-Accessorials (liftgate / inside / residential / appointment):
-Special notes (hazmat? no / high value / fragile):
-Billing contact & terms:</pre>
-        </div>
-      </div>
-
-      <div class="mt-10 flex justify-center gap-4">
-        <a href="mailto:contact@portneuflogistics.com" class="inline-flex items-center rounded-lg bg-[var(--brand)] px-6 py-3 font-semibold text-white hover:opacity-90">Email Portneuf Logistics</a>
-        <a href="tel:2082695442" class="inline-flex items-center rounded-lg border border-[var(--brand)] px-6 py-3 font-semibold text-[var(--brand)] hover:bg-[var(--brand)] hover:text-white">Call Now</a>
-      </div>
+  <!-- Contact Section -->
+  <section id="contact" class="bg-gray-900 text-white py-20">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-6 text-green-400">Contact Us</h2>
+      <p class="text-lg leading-relaxed max-w-xl mx-auto mb-4">
+        <strong>Portneuf Logistics LLC</strong><br>
+        USDOT 4491926<br>
+        Pocatello, ID 83204
+      </p>
+      <p class="text-lg mb-4">
+        📞 (208) 269-5442<br>
+        📧 <a href="mailto:contact@portneuflogistics.com" class="underline text-green-400 hover:text-green-300">contact@portneuflogistics.com</a><br>
+        🌐 <a href="https://portneuflogistics.com" class="underline text-green-400 hover:text-green-300">www.portneuflogistics.com</a>
+      </p>
+      <p class="text-sm text-gray-400 mt-6">
+        Scan the QR code on our flyer to visit our site.
+      </p>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="border-t border-slate-100 bg-slate-50 text-center text-sm text-slate-600 py-6">
-    <p>© <span id="yr"></span> Portneuf Logistics LLC · Pocatello, ID · USDOT 4491926 · <a href="tel:2082695442">208-269-5442</a></p>
+  <footer class="bg-black text-gray-400 text-center py-6 text-sm">
+    <p>&copy; 2025 Portneuf Logistics LLC. All rights reserved.</p>
   </footer>
 
-  <script>
-    document.getElementById('yr').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
