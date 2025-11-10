@@ -14,54 +14,57 @@
 
   <style>
     html { scroll-behavior: smooth; }
-    body { font-family:'Inter',system-ui,sans-serif; color:#0f172a; }
-    .container { max-width:1100px; }
+    body { font-family: 'Inter', system-ui, sans-serif; color: #0f172a; }
     .bg-fixed-img {
-      background-image:url('background-mountains.jpg');
-      background-size:cover;
-      background-position:center;
-      background-attachment:fixed;
+      background: url('background-mountains.jpg') center/cover fixed no-repeat;
     }
+    .container { max-width: 1100px; }
+    .brand-green { color: #236b3f; }
+    .brand-bg { background-color: #236b3f; }
   </style>
 </head>
 
-<body class="bg-white text-slate-900 relative">
+<body class="bg-white text-slate-900">
 
   <!-- Hero Section with Fixed Background -->
   <section class="bg-fixed-img relative h-screen flex flex-col items-center justify-center text-center text-white">
-    <div class="absolute inset-0 bg-black/40"></div>
+    <div class="absolute inset-0 bg-black/50"></div>
     <div class="relative z-10 px-6">
-      <img src="./logo.png" alt="Portneuf Logistics Logo" class="mx-auto mb-6 w-44 md:w-52 drop-shadow-lg">
+      <!-- Logo -->
+      <img src="https://raw.githubusercontent.com/aaroncurtis1996-ui/aaroncurtis1996.github.io/main/logo.png" alt="Portneuf Logistics Logo" class="mx-auto mb-6 w-44 md:w-52 drop-shadow-lg">
       <h1 class="text-4xl md:text-5xl font-bold mb-4">Reliable Logistics Solutions</h1>
       <p class="text-lg md:text-xl max-w-2xl mx-auto">
-        Portneuf Logistics LLC provides dependable and professional transportation solutions throughout Idaho.
-        Based in Pocatello, we specialize in box-truck freight, local deliveries, and logistics coordination
-        for businesses and individuals who value reliability and transparency.
+        Providing dependable, professional, and transparent transportation solutions across Idaho. 
+        Based in Pocatello, Portneuf Logistics LLC specializes in box truck freight, local deliveries, 
+        and logistics coordination for businesses and individuals who value reliability.
       </p>
     </div>
   </section>
 
-  <!-- Services Section (left aligned) -->
-  <section id="services" class="bg-white py-20">
+  <!-- About / Services Section -->
+  <section id="services" class="py-20 bg-white">
     <div class="container mx-auto px-6 md:px-10">
-      <h2 class="text-3xl font-bold mb-8 text-green-700 text-left">Our Services</h2>
-      <ul class="text-lg leading-relaxed space-y-3 text-left max-w-3xl">
+      <h2 class="text-3xl font-bold mb-6 brand-green">Our Services</h2>
+      <p class="text-lg leading-relaxed mb-8 max-w-3xl">
+        We offer flexible and professional logistics services tailored to meet your shipping and delivery needs across Idaho.
+      </p>
+      <ul class="text-lg leading-relaxed space-y-3 max-w-3xl list-disc list-inside">
         <li><strong>Box Truck Freight:</strong> Up to full-load capacity within Idaho</li>
-        <li><strong>Local & Regional Deliveries:</strong> Across all of Idaho</li>
+        <li><strong>Local & Regional Deliveries:</strong> Serving all of Idaho</li>
         <li><strong>Route Coordination & Load Scheduling</strong></li>
         <li><strong>Business-to-Business (B2B) & Commercial Deliveries</strong></li>
         <li><strong>Route Planning & Consulting</strong></li>
         <li><strong>On-Demand or Scheduled Delivery Plans</strong></li>
         <li><strong>Proof of Delivery & Real-Time Updates</strong></li>
-        <li><strong>Partnership & Sub-Contract Opportunities</strong></li>
+        <li><strong>Partnership & Subcontract Opportunities</strong></li>
       </ul>
     </div>
   </section>
 
-  <!-- Pricing Section -->
+  <!-- Transparent Pricing Section -->
   <section id="pricing" class="bg-gray-100 py-20">
-    <div class="container mx-auto px-6 md:px-10 text-left">
-      <h2 class="text-3xl font-bold mb-8 text-green-700">Transparent, Per-Mile Pricing</h2>
+    <div class="container mx-auto px-6 md:px-10">
+      <h2 class="text-3xl font-bold mb-6 brand-green">Transparent, Per-Mile Pricing</h2>
       <p class="text-lg leading-relaxed max-w-3xl">
         Our pricing is simple, fair, and transparent — designed so clients always know what they’re paying for.
         We calculate rates per mile based on distance, weight, and time requirements. Every quote includes fuel,
@@ -70,16 +73,29 @@
     </div>
   </section>
 
-  <!-- Why Choose Us -->
-  <section id="why" class="bg-white py-20">
-    <div class="container mx-auto px-6 md:px-10 text-left">
-      <h2 class="text-3xl font-bold mb-8 text-green-700">Why Choose Portneuf Logistics</h2>
-      <ul class="text-lg leading-relaxed space-y-3 max-w-3xl">
+  <!-- Why Choose Us Section -->
+  <section id="why" class="py-20 bg-white">
+    <div class="container mx-auto px-6 md:px-10">
+      <h2 class="text-3xl font-bold mb-6 brand-green">Why Choose Portneuf Logistics</h2>
+      <ul class="text-lg leading-relaxed space-y-3 max-w-3xl list-disc list-inside">
         <li>Fully Registered & Insured Idaho Business</li>
         <li>Locally Owned and Operated in Pocatello / Chubbuck</li>
         <li>Fast, Professional, and Cost-Effective</li>
-        <li>Reliable, Professional, and Punctual</li>
+        <li>Reliable, Transparent, and Punctual</li>
       </ul>
+    </div>
+  </section>
+
+  <!-- Call for a Quote Section -->
+  <section id="quote" class="brand-bg text-white py-20">
+    <div class="container mx-auto px-6 md:px-10 text-center">
+      <h2 class="text-3xl font-bold mb-6">Call for a Quote</h2>
+      <p class="text-lg mb-6 max-w-xl mx-auto">
+        Need a reliable delivery or freight solution? We’ll provide a fair, fast, and transparent quote for your transport needs.
+      </p>
+      <a href="tel:2082695442" class="inline-block bg-white text-green-800 font-semibold py-3 px-8 rounded-full shadow hover:bg-gray-100 transition">
+        📞 (208) 269-5442
+      </a>
     </div>
   </section>
 
@@ -93,7 +109,6 @@
         Pocatello, ID 83204
       </p>
       <p class="text-lg mb-4">
-        📞 (208) 269-5442<br>
         📧 <a href="mailto:contact@portneuflogistics.com" class="underline text-green-400 hover:text-green-300">contact@portneuflogistics.com</a><br>
         🌐 <a href="https://portneuflogistics.com" class="underline text-green-400 hover:text-green-300">www.portneuflogistics.com</a>
       </p>
